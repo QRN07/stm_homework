@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"no delay\startup_stm32f103xb.o"
+"no delay\main.o"
+"no delay\stm32f1xx_it.o"
+"no delay\stm32f1xx_hal_msp.o"
+"no delay\stm32f1xx_hal_gpio_ex.o"
+"no delay\stm32f1xx_hal_tim.o"
+"no delay\stm32f1xx_hal_tim_ex.o"
+"no delay\stm32f1xx_hal.o"
+"no delay\stm32f1xx_hal_rcc.o"
+"no delay\stm32f1xx_hal_rcc_ex.o"
+"no delay\stm32f1xx_hal_gpio.o"
+"no delay\stm32f1xx_hal_dma.o"
+"no delay\stm32f1xx_hal_cortex.o"
+"no delay\stm32f1xx_hal_pwr.o"
+"no delay\stm32f1xx_hal_flash.o"
+"no delay\stm32f1xx_hal_flash_ex.o"
+"no delay\stm32f1xx_hal_exti.o"
+"no delay\system_stm32f1xx.o"
+--strict --scatter "NO DELAY\NO DELAY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NO DELAY.map" -o "NO DELAY\NO DELAY.axf"
