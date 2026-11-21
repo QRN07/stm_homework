@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"change2\startup_stm32f103xb.o"
+"change2\main.o"
+"change2\gpio.o"
+"change2\tim.o"
+"change2\stm32f1xx_it.o"
+"change2\stm32f1xx_hal_msp.o"
+"change2\stm32f1xx_hal_gpio_ex.o"
+"change2\stm32f1xx_hal_tim.o"
+"change2\stm32f1xx_hal_tim_ex.o"
+"change2\stm32f1xx_hal.o"
+"change2\stm32f1xx_hal_rcc.o"
+"change2\stm32f1xx_hal_rcc_ex.o"
+"change2\stm32f1xx_hal_gpio.o"
+"change2\stm32f1xx_hal_dma.o"
+"change2\stm32f1xx_hal_cortex.o"
+"change2\stm32f1xx_hal_pwr.o"
+"change2\stm32f1xx_hal_flash.o"
+"change2\stm32f1xx_hal_flash_ex.o"
+"change2\stm32f1xx_hal_exti.o"
+"change2\system_stm32f1xx.o"
+--strict --scatter "change2\change2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "change2.map" -o change2\change2.axf
