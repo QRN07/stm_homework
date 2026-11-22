@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"double\startup_stm32f103xb.o"
+"double\main.o"
+"double\gpio.o"
+"double\stm32f1xx_it.o"
+"double\stm32f1xx_hal_msp.o"
+"double\stm32f1xx_hal_gpio_ex.o"
+"double\stm32f1xx_hal.o"
+"double\stm32f1xx_hal_rcc.o"
+"double\stm32f1xx_hal_rcc_ex.o"
+"double\stm32f1xx_hal_gpio.o"
+"double\stm32f1xx_hal_dma.o"
+"double\stm32f1xx_hal_cortex.o"
+"double\stm32f1xx_hal_pwr.o"
+"double\stm32f1xx_hal_flash.o"
+"double\stm32f1xx_hal_flash_ex.o"
+"double\stm32f1xx_hal_exti.o"
+"double\system_stm32f1xx.o"
+--strict --scatter "double\double.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "double.map" -o double\double.axf
