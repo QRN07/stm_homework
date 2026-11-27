@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"control_motion\startup_stm32f103xb.o"
+"control_motion\main.o"
+"control_motion\gpio.o"
+"control_motion\adc.o"
+"control_motion\tim.o"
+"control_motion\stm32f1xx_it.o"
+"control_motion\stm32f1xx_hal_msp.o"
+"control_motion\stm32f1xx_hal_gpio_ex.o"
+"control_motion\stm32f1xx_hal_adc.o"
+"control_motion\stm32f1xx_hal_adc_ex.o"
+"control_motion\stm32f1xx_hal.o"
+"control_motion\stm32f1xx_hal_rcc.o"
+"control_motion\stm32f1xx_hal_rcc_ex.o"
+"control_motion\stm32f1xx_hal_gpio.o"
+"control_motion\stm32f1xx_hal_dma.o"
+"control_motion\stm32f1xx_hal_cortex.o"
+"control_motion\stm32f1xx_hal_pwr.o"
+"control_motion\stm32f1xx_hal_flash.o"
+"control_motion\stm32f1xx_hal_flash_ex.o"
+"control_motion\stm32f1xx_hal_exti.o"
+"control_motion\stm32f1xx_hal_tim.o"
+"control_motion\stm32f1xx_hal_tim_ex.o"
+"control_motion\system_stm32f1xx.o"
+--strict --scatter "control_motion\control_motion.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "control_motion.map" -o control_motion\control_motion.axf

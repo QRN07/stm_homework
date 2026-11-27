@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"ledmotion\startup_stm32f103xb.o"
+"ledmotion\main.o"
+"ledmotion\gpio.o"
+"ledmotion\tim.o"
+"ledmotion\stm32f1xx_it.o"
+"ledmotion\stm32f1xx_hal_msp.o"
+"ledmotion\stm32f1xx_hal_gpio_ex.o"
+"ledmotion\stm32f1xx_hal_tim.o"
+"ledmotion\stm32f1xx_hal_tim_ex.o"
+"ledmotion\stm32f1xx_hal.o"
+"ledmotion\stm32f1xx_hal_rcc.o"
+"ledmotion\stm32f1xx_hal_rcc_ex.o"
+"ledmotion\stm32f1xx_hal_gpio.o"
+"ledmotion\stm32f1xx_hal_dma.o"
+"ledmotion\stm32f1xx_hal_cortex.o"
+"ledmotion\stm32f1xx_hal_pwr.o"
+"ledmotion\stm32f1xx_hal_flash.o"
+"ledmotion\stm32f1xx_hal_flash_ex.o"
+"ledmotion\stm32f1xx_hal_exti.o"
+"ledmotion\system_stm32f1xx.o"
+--strict --scatter "ledmotion\ledmotion.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ledmotion.map" -o ledmotion\ledmotion.axf
